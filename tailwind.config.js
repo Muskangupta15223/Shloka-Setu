@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-   darkMode: ['class'],
+  darkMode: 'class',
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -9,7 +9,7 @@ export default {
   	extend: {
   		fontFamily: {
   			edu: [
-  				'Edu NSW ACT Foundation"',
+  				'Edu NSW ACT Foundation',
   				'cursive'
   			],
   			sora: [
