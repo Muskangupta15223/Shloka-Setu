@@ -1,12 +1,12 @@
 import React from 'react'
 import './App.css'
 import Home from './components/pages/Home'
-import Nav from './components/Nav'
+import Nav from './components/pages/Nav'
 import { Route, Routes } from 'react-router-dom'
 import About from './components/pages/About'
 import Quote from './components/pages/Quote'
 import Book1 from './components/pages/Book1'
-import Welcome from './components/Welcome'
+import Welcome from './components/pages/Welcome'
 const App = () => {
   return (
    
