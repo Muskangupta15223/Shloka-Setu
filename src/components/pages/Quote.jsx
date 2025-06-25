@@ -5,11 +5,14 @@ const Quote = () => {
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
-    fetch('/gyan.json')
+    fetch('/Shloka-Setu/gyan.json')
       .then(res => res.json())
       .then(data => {
         setQuotes(data);
         setCurrent(0); // start from first quote
+          if (data.length > 0) {
+          setCurrent(Math.floor(Math.random() * data.length));
+        }
       });
   }, []);
 
@@ -22,12 +25,12 @@ const Quote = () => {
   };
   
    const handleClick = () => {
-    const text = quotes[current].meaning_hinglish;
+    const text = quotes[current]?.meaning_hinglish || "Voice is Loading";
     const val = new SpeechSynthesisUtterance(text);
     val.lang = 'hi-IN'; // Set language to Hindi
-    val.rate = 0.9;
-    val.pitch=1.16 // Set the rate of speech 
-  
+    val.rate = 0.8;
+    val.pitch=0.9;
+    speechSynthesis.cancel(); // Cancel any ongoing speech
     speechSynthesis.speak(val);
    }
 
@@ -42,10 +45,11 @@ const Quote = () => {
       </p>
       <button
         onClick={handleClick}
+         title="Please use Chrome browser to explore this feature."
         className="mt-4 px-4 py-2 bg-orange-500 text-white rounded hover:bg-orange-600 transition-colors">
         Listen
         </button>
-  <div className="mt-6 flex gap-4">
+  <div className="mt-6 flex gap-10">
 
   <button onClick={prevQuote} className="text-black hover:text-orange-500 cursor-pointer">
     <span className="material-symbols-outlined">arrow_back_ios</span>

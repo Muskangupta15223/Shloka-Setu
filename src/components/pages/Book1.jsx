@@ -8,7 +8,7 @@ const Book1 = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("/gyan.json")
+    fetch("/Shloka-Setu/gyan.json")
       .then((res) => {
         if (!res.ok) throw new Error("Failed to load gyan.json");
         return res.json();
@@ -27,15 +27,15 @@ const Book1 = () => {
   if (error) return <div className="p-4 text-red-600">{error}</div>;
 
   return (
-    <div className="book-container flex justify-center mt-8 overflow-hidden px-2 sm:px-4">
+    <div className="book-container flex justify-center mt-8 overflow-hidden px-2 sm:px-2">
     <HTMLFlipBook
   width={450}
   height={520}
-  className="mx-4 md:mx-20 shadow-xl rounded-lg text-black-900 p-2 "
+  className="mx-3 md:mx-16 shadow-xl rounded-lg text-black-900 p-1 "
   size="stretch"
-  minWidth={310}
-  maxWidth={400}
-  minHeight={490}
+  minWidth={350}
+  maxWidth={450}
+  minHeight={500}
   maxHeight={520}
   showCover={true}
   mobileScrollSupport={true}
@@ -43,10 +43,9 @@ const Book1 = () => {
         {/* Front Cover */}
         <div className="cover-page flex items-center justify-center ">
          <img
-  src="/images/mainpage.jpeg"
+  src="/Shloka-Setu/images/mainpage.jpeg"
   alt="front"
   className="w-full h-full object-cover rounded"
-  loading="lazy"
 />
         </div>
 
@@ -60,7 +59,7 @@ const Book1 = () => {
         {/* Back Cover */}
         <div className="cover-page flex items-center justify-center">
          <img
-  src="/images/backpage.jpg"
+  src="/Shloka-Setu/images/backpage.jpg"
   alt="back"
   className="w-full h-full object-cover rounded"
 />
