@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="0; url=/Shloka-Setu/">
+  </head>
+  <body>
+    <script>
+      // Redirect to the correct path for client-side routing
+      var l = window.location;
+      var path = l.pathname.replace(/^\/Shloka-Setu/, '');
+      window.location.replace('/Shloka-Setu/' + (path ? '#' + path : ''));
+    </script>
+  </body>
+</html>
