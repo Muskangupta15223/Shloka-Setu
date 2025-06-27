@@ -9,7 +9,7 @@
 ## Book Flip Feature
 
   Click on the book and see turning the feature of Gita pages
-[![Book Flip Demo](./assets/bookpage.png)](./assets/PageTurn.mp4)
+[![Book Flip Demo](src/assets/bookpage.png)](src/assets/PageTurn.mp4)
 
 
 
@@ -41,24 +41,24 @@
 ## 📸 Screenshots
 
 | Login | 
-| ![Login](./assets/login.png) |
+| ![Login](src/assets/login.png) |
 |------|-----------|------------------|-----------|----------------|------------------||------------------|-----------|-------
 
 Home Page | 
- ![Home](./assets/Main.png) 
+ ![Home](src/assets/Main.png) 
 |------|-----------|------------------|-----------|----------------|------------------||------------------|-----------|-------
 
 Quote Page | 
- |![Quote](./assets/Quote.png) 
+ |![Quote](src/assets/Quote.png) 
  |------|-----------|------------------|-----------|----------------|------------------||------------------|-----------|------
 
 Book View  
- | ![Book](./assets/Book.png) 
+ | ![Book](src/assets/Book.png) 
  |------|-----------|------------------|-----------|----------------|------------------||------------------|-----------|--------
 About Gita(in hindi) | 
- | ![About](./assets/AboutHindi.png) | 
+ | ![About](src/assets/AboutHindi.png) | 
  About Gita(in english) |
-     ![About](./assets/AboutEng.png)
+     ![About](src/assets/AboutEng.png)
 |------|-----------|------------------|-----------|----------------|------------------||------------------|-----------|----------------|
 
 
